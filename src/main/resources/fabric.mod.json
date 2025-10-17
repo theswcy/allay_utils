@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "allay-utils",
+	"version": "${version}",
+	"name": "Allay Utils",
+	"description": "A basic and simple mod that's add upgrades on the Allay!",
+	"authors": [
+		"theswcy"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/allay-utils",
+		"sources": "https://github.com/theswcy/allay-utils"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/allay-utils/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.theswcy_allay.AllayUtils"
+		],
+		"client": [
+			"com.theswcy_allay.AllayUtilsClient"
+		]
+	},
+	"mixins": [
+		"allay-utils.mixins.json",
+		{
+			"config": "allay-utils.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

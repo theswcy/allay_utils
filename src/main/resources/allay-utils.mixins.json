@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "com.theswcy_allay.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+      "AllayImmortalMixin",
+      "AllayDoorGoalMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
