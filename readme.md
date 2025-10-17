@@ -1,6 +1,9 @@
 ## 🫐 Allays Utils!
 A basic and simple Fabric Mod that's add more little features and utilities to the Allay!
 
+### Download:
+- [Modrinth 1.0.0](https://modrinth.com/project/allay-utils)
+
 ### Some things:
 - Now the allay is immortal.
 - Allay can open doors without making noises.
