@@ -7,7 +7,8 @@ A basic and simple Fabric Mod that's add more little features and utilities to t
 
 ### Some things:
 - Now the allay is immortal.
-- Allay can open doors without making noises.
+- Allay can open doors.
+- Allay now drops particles with some certain items. [ swords, golden apples... ]
 
 More utilities in the near future...
 
