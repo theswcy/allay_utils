@@ -12,6 +12,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -48,7 +49,15 @@ public abstract class AllayItemEffectMixin {
                     allay.getZ(),
                     0.0, 0.3, 0.0
             );
-        } else if (stack.getItem() instanceof SwordItem) {
+        } else if (stack.isOf(Items.ENDER_PEARL)) {
+            allay.getWorld().addParticle(
+                    ParticleTypes.END_ROD,
+                    allay.getX(),
+                    allay.getY() - 3,
+                    allay.getZ(),
+                    0.0, 0.3, 0.0
+            );
+        }else if (stack.getItem() instanceof SwordItem) {
             int amount = 0;
             if (stack.isOf(Items.WOODEN_SWORD)) amount = 1;
             if (stack.isOf(Items.STONE_SWORD)) amount = 1;
@@ -59,7 +68,7 @@ public abstract class AllayItemEffectMixin {
                 allay.getWorld().addParticle(
                         ParticleTypes.FLAME,
                         allay.getX() + Math.random() - 0.5,
-                        allay.getY() - 1.0,
+                        allay.getY() - 0.3,
                         allay.getZ() + Math.random() - 0.5,
                         0.0, 0.05, 0.0
                 );
