@@ -2,7 +2,8 @@
 A basic and simple Fabric Mod that's add more little features and utilities to the Allay!
 
 ### Download:
-- [Modrinth 1.0.0](https://modrinth.com/project/allay-utils)
+- [Modrinth](https://modrinth.com/project/allay-utils) 1.0.0
+- Version in this repository: 1.0.1
 
 ### Some things:
 - Now the allay is immortal.
